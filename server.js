@@ -16,6 +16,7 @@ const dboption = {
 
 //middlewares-------------------------------
 app.use(myconn(mysql,dboption, 'single'))
+app.use(express.json())
 
 //routes-------------------------------------
 app.get('/', (req, res)=>{
